@@ -17,7 +17,7 @@ function showGif() {
         gif.classList.add('visible');
     })
     content.remove();
-    box.style.marginBlock = `15%`;
+    box.style.marginBottom = `15%`;
 }
 
 noBtn.addEventListener('mouseenter', moveBtn);
