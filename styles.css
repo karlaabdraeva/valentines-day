@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: pink;
+    overflow: hidden;
+    padding: 20px;
+}
+
+img {
+    width: 20%;
+    height: 40%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    height: 50vh;
+}
+
+.content {
+    display: flex;
+    padding-block: 30px;
+    font-size: 1em;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(249, 248, 244);
+    width: 50vw;
+    height: 40vh; 
+}
+
+.text-box {
+    flex-shrink: 1;
+}
+
+.buttons-wrapper {
+    width: 70%;
+    display: flex;
+    height: 30%;
+    flex-direction: row;
+    margin-inline: 10px;
+    justify-content: space-between;
+    position: relative;   
+}
+
+.button {
+    display: block;
+    border: none;
+    font-size: 0.8rem;
+    width: 20%;
+    min-width: 50px;
+    border-radius: 30px;
+    height: 60%;
+    min-height: 40px;
+    flex-shrink: 1;
+}
+
+.yes {
+    color: #fff;
+    position: relative;
+    background-color: red;
+    transition: transform 0.3s ease;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.yes:hover {
+    text-shadow: #fff;
+    font-size: 1.2rem;
+    transform: scale(1.2);
+    background: linear-gradient(white, red, white);
+}
+
+.accent {
+    color: red;
+    font-size: 1.3em;
+}
+
+.no {
+    position: absolute;
+    left: 80%;
+    justify-self: flex-end;
+    margin-left: auto;
+    right: 10px;
+}
+
+.tenor-gif-embed {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 3s ease, transform 3s ease;
+}
+
+.tenor-gif-embed.visible {
+    opacity: 1;
+    transform: scale(1.5);
+}
